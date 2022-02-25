@@ -1,0 +1,59 @@
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Canada's Hangman Game</title>
+</head>
+<body>
+  <div class="container">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/004/757/303/small/canada-flag-free-vector.jpg" alt="Canada Flag" style="width:100px;height:50px;" class="center">
+    <h1>Canada's Hangman Game</h1>
+    <h2>Cities based in Canada</h2>
+     <p>
+      Find the 'hidden' word by entering a letter of your choice!
+    </p>
+    <div class="game-box">
+      <svg class="figure">
+        <!-- Stand -->
+        <line x1="25%" y1="5%" x2="65%" y2="5%"></line>
+        <line x1="65%" y1="5%" x2="65%" y2="20%"></line>
+        <line x1="25%" y1="5%" x2="25%" y2="95%"></line>
+        <line x1="5%" y1="95%" x2="45%" y2="95%"></line>
+
+        <!-- Head -->
+        <circle r="10%" cx="65%" cy="30%" class="body-part"></circle>
+
+        <!-- Body -->
+        <line x1="65%" y1="40%" x2="65%" y2="60%" class="body-part"></line>
+
+        <!-- Arms -->
+        <line x1="50%" y1="40%" x2="65%" y2="50%" class="body-part"></line>
+        <line x1="80%" y1="40%" x2="65%" y2="50%" class="body-part"></line>
+
+        <!-- Legs -->
+        <line x1="65%" y1="60%" x2="80%" y2="70%" class="body-part"></line>
+        <line x1="65%" y1="60%" x2="50%" y2="70%" class="body-part"></line>
+      </svg>
+
+      <div class="content">
+        <ul id="word" class="word"></ul>
+        <div id="incorrect" class="incorrect">
+          <h2>Incorrect :</h2>
+          <p></p>
+        </div>
+      </div>
+      <div id="backdrop" class="backdrop"></div>
+      <div id="final-msg" class="final-msg">
+        <p id="msg-info" class="msg-info"></p>
+        <button id="play" class="play">Play Again</button>
+      </div>
+      <div id="indication" class="indication">
+        <p>You have already entered this letter</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
