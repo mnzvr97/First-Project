@@ -29,8 +29,8 @@
 ###   2.	Multiple players
 ###   3.	Improved graphics 
 ###   4.	Additional categories
-####   a.	Countries
-####   b.	Provinces
+####        a.	Countries
+####        b.	Provinces
 
 
 
